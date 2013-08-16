@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello beauty-message!</string>
+    <string name="app_name">app</string>
+    <string name="beauty_message_list_temp_title">夏日炫彩印花短裤 8款新穿巧搭配</string>
+    <string name="beauty_message_list_temp_source">网易女人</string>
+    <string name="beauty_message_list_item_date">今天 08:00</string>
+    <string name="date_format">MM月dd日</string>
+    <string name="one_day_ago">1天前</string>
+    <string name="less_then_one_minute">刚刚</string>
+
+    <string-array name="hour_and_minute_format">
+        <item>%1$s小时%2$s分钟前</item>
+        <item>%1$s小时前</item>
+        <item>%2$s分钟前</item>
+    </string-array>
+
+    <string name="str_sourcr">来源：</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_report">反馈</string>
+    <string name="menu_jump">跳转</string>
+
+    <dimen name="choice_item_padding_x">2dp</dimen>
+    <dimen name="choice_item_padding_y">8dp</dimen>
+
+    <string name="main_navigation_main">置顶</string>
+    <string name="main_navigation_favo">我收藏的</string>
+    <string name="main_navigation_last">上次看到</string>
+    <string name="main_navigation_group">分类查看</string>
+    
+    <string name="filter_string_1">发型屋小编</string>
+    <string name="filter_string_2">本文系</string>
+    <string name="filter_string_3">发型屋编辑</string>
+    
+    <string name="string_hairstyle_detail_title">时尚韩式半扎发教程图解 优雅气质尽显</string>
+    <string name="string_hairstyle_detail_source">来源：发型屋</string>
+    <string name="string_hairstyle_detail_keyword">关键字：短发，卷发</string>
+    
+    <string name="confirm_dialog_title">提示：</string>
+    <string name="confirm_dialog_content">从上次退出的位置开始加载？</string>
+    <string name="confirm_dialog_confirm">确认</string>
+    <string name="confirm_dialog_cancel">取消</string>
+
+</resources>

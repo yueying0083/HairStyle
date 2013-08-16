@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="llfl_viewholder_tag" type="id"/>
+    <item name="llfl_obj_tag" type="id"/>
+    <item name="comment_viewholder_clickzone_tag" type="id"/>
+    
+</resources>
