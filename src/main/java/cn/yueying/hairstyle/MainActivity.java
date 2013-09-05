@@ -1,19 +1,17 @@
 package cn.yueying.hairstyle;
 
 import java.util.List;
-import cn.yueying.hairstyle.view.WaterFallScrollView;
-import cn.yueying.hairstyle.view.WaterFallScrollView.OnItemClickListener;
-import cn.yueying.hairstyle.view.WaterFallScrollView.OnScrollListener;
-import cn.yueying.hairstyle.view.WaterFallScrollView.SimpleOnScrollListener;
-import cn.yueying.tools.DialogTools;
 import cn.yueying.tools.LoggerFactory;
+import cn.yueying.waterfalllibrary.view.WaterFallScrollView;
+import cn.yueying.waterfalllibrary.view.WaterFallScrollView.OnItemClickListener;
+import cn.yueying.waterfalllibrary.view.WaterFallScrollView.OnScrollListener;
+import cn.yueying.waterfalllibrary.view.WaterFallScrollView.SimpleOnScrollListener;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.view.View.OnClickListener;
 
 public class MainActivity extends BaseActivity {
 	public static final LoggerFactory.Logger mLogger = LoggerFactory.getLogger(MainActivity.class);
@@ -43,28 +41,6 @@ public class MainActivity extends BaseActivity {
 			mCurrentQueryId = hs.getId();
 		}
 	}
-
-	@SuppressWarnings("unused")
-	private void loadSharedPreference() {
-		mSharedPreferences = getSharedPreferences("SP", MODE_PRIVATE);
-		mCurrentQueryId = mSharedPreferences.getLong(LAST_READ_HAIR_STYLE_ID, 0L);
-		if (mCurrentQueryId != 0) {
-			DialogTools.showWarningDialog(this, getString(R.string.confirm_dialog_content),
-					mOnClickListener);
-		}
-	}
-
-	private OnClickListener mOnClickListener = new OnClickListener() {
-
-		@Override
-		public void onClick(View v) {
-			switch (v.getId()) {
-				case R.id.btn_confirm_dialog_cancel:
-					mCurrentQueryId = 0L;
-					break;
-			}
-		}
-	};
 
 	public List<HairStyle> queryByDate(long currentQueryId) {
 		mIsQuerying = true;

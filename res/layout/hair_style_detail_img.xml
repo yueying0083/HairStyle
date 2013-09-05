@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical" >
 
-    <cn.yueying.hairstyle.view.FixedImageView
+    <cn.yueying.waterfalllibrary.view.FixedImageView
         android:id="@+id/fiv_image_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

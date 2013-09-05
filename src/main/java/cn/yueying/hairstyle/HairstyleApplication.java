@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.apache.http.impl.client.DefaultHttpClient;
 import cn.yueying.hairstyle.DaoMaster.OpenHelper;
-import cn.yueying.tools.file.ImageLoader;
+import cn.yueying.waterfalllibrary.tool.ImageLoader;
 import android.app.Application;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -28,7 +28,7 @@ public class HairstyleApplication extends Application {
 		super.onCreate();
 		copyFileIfNotExsit();
 		initDatabase();
-		mImageLoader = new ImageLoader(this);
+		mImageLoader = ImageLoader.getInstance(this);
 	}
 
 	private void initDatabase() {

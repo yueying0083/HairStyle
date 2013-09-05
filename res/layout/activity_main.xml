@@ -1,57 +1,28 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
     <LinearLayout
         android:id="@+id/ll_main_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="42dp"
-        android:layout_alignParentBottom="true"
         android:background="@color/main_navigation_bar_bg_color"
         android:orientation="horizontal" >
 
         <Button
             android:id="@+id/btn_main_navigation_main"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_margin="1dp"
-            android:layout_weight="0.2"
             android:background="@drawable/bg_btn_navigation_selector"
             android:text="@string/main_navigation_main" />
-
-        <Button
-            android:id="@+id/btn_main_navigation_favo"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_margin="1dp"
-            android:layout_weight="0.2"
-            android:background="@drawable/bg_btn_navigation_selector"
-            android:text="@string/main_navigation_favo" />
-
-        <Button
-            android:id="@+id/btn_main_navigation_last"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_margin="1dp"
-            android:layout_weight="0.2"
-            android:background="@drawable/bg_btn_navigation_selector"
-            android:text="@string/main_navigation_last" />
-
-        <Button
-            android:id="@+id/btn_main_navigation_group"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_margin="1dp"
-            android:layout_weight="0.2"
-            android:background="@drawable/bg_btn_navigation_selector"
-            android:text="@string/main_navigation_group" />
     </LinearLayout>
 
-    <cn.yueying.hairstyle.view.WaterFallScrollView
+    <cn.yueying.waterfalllibrary.view.WaterFallScrollView
         android:id="@+id/staggeredGridView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/ll_main_navigation_bar" />
+        android:layout_height="match_parent" />
 
-</RelativeLayout>
+</LinearLayout>
